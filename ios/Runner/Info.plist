@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>zh_CN</string>
+	<key>CFBundleDisplayName</key>
+	<string>旅记</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>luji_app</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+
+	<!-- 第三方 App 唤起查询白名单（技术需求文档 6.1.3） -->
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>iosamap</string>
+		<string>baidumap</string>
+		<string>imeituan</string>
+		<string>weixin</string>
+	</array>
+
+	<!-- 权限用途说明 -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>用于地理围栏到达提醒与附近美食推荐</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>用于旅记运行期间的行程定点到达提醒</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>用于识别美团优惠券截图与保存旅途照片</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>用于将旅记照片保存到相册</string>
+</dict>
+</plist>
